@@ -1,0 +1,61 @@
+.container-fluid {
+  padding: 0; }
+
+.navbar {
+  background-color: white !important; }
+  .navbar .logo img {
+    height: 50px; }
+  .navbar .info {
+    text-align: right; }
+    .navbar .info img {
+      height: 50px;
+      padding: 10px; }
+
+#home-sec img {
+  position: absolute;
+  z-index: -1; }
+
+#map {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1; }
+
+#info form, #info .lista-carros {
+  background-color: white;
+  width: 250px;
+  padding: 25px 19px;
+  margin: 10px 0; }
+  #info form .origen, #info .lista-carros .origen {
+    margin-bottom: 15px; }
+  #info form select, #info .lista-carros select {
+    border: 1px solid yellow;
+    width: 200px; }
+  #info form p, #info .lista-carros p {
+    font-weight: bold;
+    margin: 0; }
+  #info form #cantidad, #info .lista-carros #cantidad {
+    width: 40px;
+    height: 20px;
+    margin: 5px 0;
+    padding: 0px !important; }
+#info .boton {
+  background: yellow;
+  padding: 5px 96px;
+  color: white;
+  font-weight: bold;
+  text-align: center; }
+#info #compartir {
+  padding: 5px 54px; }
+#info .lista-carros {
+  height: 300px; }
+  #info .lista-carros div {
+    margin: 8px 0; }
+  #info .lista-carros small {
+    font-size: 8px; }
+  #info .lista-carros p {
+    line-height: 3px; }
+  #info .lista-carros .text {
+    margin: 20px 0; }
+
+/*# sourceMappingURL=style.css.map */

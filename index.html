@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="src/sweetalert/sweetalert.min.js" rel="stylesheet">
+	<link href="src/sweetalert/sweetalert.css" rel="stylesheet">
+	<link href="src/css/style.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Examen Herramientas Productividad</title>
+
+	<!--REQUIRED STYLE SHEETS-->
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 logo"><img src="src/img/logo-gris.jpg"></div>
+				<div class="col-md-6 info"><img id="botonInfo" src="src/img/informacion-boton.png"></div>
+			</div>
+		</div>
+	</div><!--END NAV SECTION -->
+	<div id="home-sec">   
+		<div id="map"></div>
+	</div><!--END HOME SECTION-->  
+	<section id="info">
+		<div class="container">
+		<br><br><br>
+		<div class="origen-destino">
+			<form>
+			<div id="lista-origen" class="origen">
+			<div id="paises">
+			<p>ORIGEN</p>
+			<select id="origen" class="selectpicker btn-mini" data-live-search="true">
+				 <option value="0">Seleccione</option> 
+				 <option value="Puerto Montt, Chile">Puerto Montt</option>
+				 <option value="Antofagasta, Chile">Antofagasta</option>
+				 <option value="Calama, Chile">Calama</option>
+				 <option value="Rancagua, Chile">Rancagua</option>
+				 <option value="Arica, Chile">Arica</option>
+				 <option value="Iquique, Chile">Iquique</option>
+				 <option value="Valparaiso, Chile">Valparaiso</option>
+				 <option value="La Serena, Chile">La Serena</option>
+				 <option value="Concepción, Chile">Concepción</option>
+				 <option value="Temuco, Chile">Temuco</option>
+				 <option value="Valdivia, Chile">Valdivia</option>
+				 <option value="Talca Chile">Talca</option>
+				 <option value="Coyhaique, Chile">Coyhaique</option>
+				 <option value="Punta Arenas, Chile">Punta Arenas</option>
+				 <option value="Santiago, Chile">Santiago</option> 
+			</select>
+			<p>DESTINO</p>
+			<select id="destino" class="selectpicker btn-mini" data-live-search="true">
+				 <option value="0">Seleccione</option> 
+				 <option value="Puerto Montt, Chile">Puerto Montt</option>
+				 <option value="Antofagasta, Chile">Antofagasta</option>
+				 <option value="Calama, Chile">Calama</option>
+				 <option value="Rancagua, Chile">Rancagua</option>
+				 <option value="Arica, Chile">Arica</option>
+				 <option value="Iquique, Chile">Iquique</option>
+				 <option value="Valparaiso, Chile">Valparaiso</option>
+				  <option value="La Serena, Chile">La Serena</option>
+				 <option value="Concepción, Chile">Concepción</option>
+				 <option value="Temuco, Chile">Temuco</option>
+				 <option value="Valdivia, Chile">Valdivia</option>
+				 <option value="Talca Chile">Talca</option>
+				 <option value="Coyhaique, Chile">Coyhaique</option>
+				 <option value="Punta Arenas, Chile">Punta Arenas</option>
+				 <option value="Santiago, Chile">Santiago</option>
+				 
+				 
+			</select>
+ 	</div>
+				
+			</div>
+				
+			</form>
+			<a id="buscar" class="boton" href="#" disabled>BUSCAR</a>
+		</div>
+		<div id="vehiculo">
+		<div class="lista-carros" style="display:none">
+			<p>VEHICULO</p>
+			<small style="font-size: 12px">seleccione</small>
+			<div>
+				<div class="col-md-1"><input name="a" type="radio"></input></div>
+				<div class="col-md-3"><img class="img-responsive" src="src/img/moto.jpg"></div>
+				<div class="col-md-6"><p>Motocicleta</p><small>máximo <span id="cant">2</span> pasajeros</small></div>  
+			</div>
+			<div>
+				<div class="col-md-1"><input name="a" type="radio"></input></div>
+				<div class="col-md-3"><img class="img-responsive" src="src/img/auto.jpg"></div>
+				<div class="col-md-6"><p>Automóvil</p><small>máximo <span id="cant">5</span> pasajeros</small></div>  
+			</div>
+			<div>
+				<div class="col-md-1"><input name="a" type="radio"></input></div>
+				<div class="col-md-3"><img class="img-responsive" src="src/img/van.jpg"></div>
+				<div class="col-md-6"><p>Minivan</p><small>máximo <span id="cant">10</span> pasajeros</small></div>  
+			</div>
+			<div>
+				<div class="col-md-1"><input name="a" type="radio"></input></div>
+				<div class="col-md-3"><img class="img-responsive" src="src/img/camion.jpg"></div>
+				<div class="col-md-6"><p>Camión</p><small>máximo <span id="cant">3</span> pasajeros</small></div>  
+			</div>
+			<div class="row">
+				<div class="col-md-10 text"><p>Cantidad pasajeros:</p></div>
+				<div class="col-md-2" style="padding:0"><input id="cantidad" type="text"></div>
+			</div>
+			
+		</div>
+		<a id="compartir" class="boton" href="#" style="display:none">COMPARTIR CARRO!</a>
+		</div>
+		</div>
+	</section><!--END ABOUT SECTION-->
+	<section id="calculator" >
+		<div class="container">
+		</div>
+	</section><!--END PROJECT SECTION-->
+	<div id="footer">
+	
+	</div><!-- END FOOTER SECTION -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFDpaBtu6nIiWrJ8P9pEzQ3-Ndbr3cenY&callback=initMap"
+        async defer></script>
+</body>
+<script type="text/javascript" src="src/jquery/jquery.js"></script>
+<script type="text/javascript" src="src/js/custom.js"></script>
+</html>
