@@ -17,7 +17,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 logo"><img src="src/img/logo-gris.jpg"></div>
-				<div class="col-md-6 info"><img id="botonInfo" src="src/img/informacion-boton.png"></div>
+				<div class="col-md-6 info">
+				<img src="src/img/informacion-boton.png" class="tooltiptext">
+				<span class="tooltip"><img src="src/img/logo-peach.jpg" width="80px"class="d-inline-block align-top" alt=""> <br> <br> La nueva forma de moverte en la ciudad. Con <img src="src/img/logo-gris.jpg" width="60px"class="d-inline-block align-top" alt=""> puedes compartir tu viaje con amigos y cobrar el costo equitativamente.</span>
+				</div>
 			</div>
 		</div>
 	</div><!--END NAV SECTION -->
@@ -76,29 +79,29 @@
 			</div>
 				
 			</form>
-			<a id="buscar" class="boton" href="#" disabled>BUSCAR</a>
+			<a id="buscar" class="boton" href="#">BUSCAR</a>
 		</div>
 		<div id="vehiculo">
-		<div class="lista-carros" style="display:none">
+		<div id="lista-carros" class="lista-carros" style="display:none">
 			<p>VEHICULO</p>
 			<small style="font-size: 12px">seleccione</small>
 			<div>
-				<div class="col-md-1"><input name="a" type="radio"></input></div>
+				<div class="col-md-1"><input id="radio" name="a" type="radio" value="2"></input></div>
 				<div class="col-md-3"><img class="img-responsive" src="src/img/moto.jpg"></div>
 				<div class="col-md-6"><p>Motocicleta</p><small>máximo <span id="cant">2</span> pasajeros</small></div>  
 			</div>
 			<div>
-				<div class="col-md-1"><input name="a" type="radio"></input></div>
+				<div class="col-md-1"><input id="radio" name="a" type="radio" value="5"></input></div>
 				<div class="col-md-3"><img class="img-responsive" src="src/img/auto.jpg"></div>
 				<div class="col-md-6"><p>Automóvil</p><small>máximo <span id="cant">5</span> pasajeros</small></div>  
 			</div>
 			<div>
-				<div class="col-md-1"><input name="a" type="radio"></input></div>
+				<div class="col-md-1"><input id="radio" name="a" type="radio" value="10"></input></div>
 				<div class="col-md-3"><img class="img-responsive" src="src/img/van.jpg"></div>
 				<div class="col-md-6"><p>Minivan</p><small>máximo <span id="cant">10</span> pasajeros</small></div>  
 			</div>
 			<div>
-				<div class="col-md-1"><input name="a" type="radio"></input></div>
+				<div class="col-md-1"><input id="radio" name="a" type="radio" value="3"></input></div>
 				<div class="col-md-3"><img class="img-responsive" src="src/img/camion.jpg"></div>
 				<div class="col-md-6"><p>Camión</p><small>máximo <span id="cant">3</span> pasajeros</small></div>  
 			</div>
@@ -119,11 +122,12 @@
 	<div id="footer">
 	
 	</div><!-- END FOOTER SECTION -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFDpaBtu6nIiWrJ8P9pEzQ3-Ndbr3cenY&callback=initMap"
         async defer></script>
 </body>
+
 <script type="text/javascript" src="src/jquery/jquery.js"></script>
 <script type="text/javascript" src="src/js/custom.js"></script>
+<script type="text/javascript" src="src/js/ciudades.js"></script>
 </html>
